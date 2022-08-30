@@ -232,7 +232,40 @@ footer{
 
 .personal-info-item{
     margin-bottom: 20px;
+
+    /*occupy the entire horiz space*/
     display: block;
+    /*so no item appears on either side*/
     clear:both;
 }
 
+.personal-info-item .key,
+.personal-info-item .value{
+    padding-right: 8px;
+    /*to put 2 divs side by side*/
+    display: inline-block;
+
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p{
+    margin: 0;
+}
+
+.personal-info-item .key{
+    /*to put 2 divs side by side*/
+    width:30%;
+    margin-right:21px;
+    padding-top: 2px;
+    vertical-align: top;
+
+}
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value{
+    /*to put 2 divs side by side*/
+    position:absolute;
+    width: 60%;
+}
