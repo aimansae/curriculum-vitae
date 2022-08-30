@@ -11,6 +11,12 @@
     background-color: #fff;
 
 }
+
+.bg-color-personal-info{
+    background-color: #f4f4f4;
+
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -222,5 +228,11 @@ footer{
 
 }
 
-/*------Grid practice-----*/
+/*---------------------------------------Personal Info*/
+
+.personal-info-item{
+    margin-bottom: 20px;
+    display: block;
+    clear:both;
+}
 
