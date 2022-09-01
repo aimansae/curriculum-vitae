@@ -32,6 +32,11 @@
 .ui-menu-color-download {
     background-color: #525252;
 }
+
+.bg-color-work-history{
+    background-color: #9b59b6;
+
+}
 /*-------------------------------Special paddings-margins-text*/
 
 h1,h2,h2,h4{
@@ -63,7 +68,7 @@ h1,h2,h2,h4{
     float: none;
 
 }
-
+.history-heading,
 .section-heading{
     font-family: 'Exo', sans-serif;
     font-weight: 300;
@@ -242,7 +247,7 @@ footer{
 .personal-info-item .key,
 .personal-info-item .value{
     padding-right: 8px;
-    /*to put 2 divs side by side*/
+    /* inline'block helps to to put 2 divs side by side*/
     display: inline-block;
 
 }
@@ -268,4 +273,34 @@ footer{
     /*to put 2 divs side by side*/
     position:absolute;
     width: 60%;
+}
+
+/*---------------------------------------Skills*/
+/*wrapper class profived by bootstrap*/
+.progress {
+    position:relative;
+    height: 25px;
+    margin-bottom: 4px;
+
+}
+
+.progress-type{
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 3px, 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25,25,25,0.2);
+}
+
+.progress-section{
+    margin: 40px 20px;
+
+}
+
+/*---------------------------------------Work History*/
+
+.history-heading{
+    color: #fafafa;
+    margin-bottom: 60px;
 }
