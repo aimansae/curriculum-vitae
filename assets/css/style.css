@@ -302,5 +302,45 @@ footer{
 
 .history-heading{
     color: #fafafa;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+}
+
+.timeline-item{
+    padding:4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+/*content can only be used with :befor/after psuedo elements*/
+.timeline-item:before{
+    content:attr(data-dates);
+    position: absolute;
+    left: 2em;
+    top: 3em;
+    display: block;
+    font-family: 'Exo', sans-serif;
+    font-weight: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after{
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left:-6px;
+    border-radius: 12px;
+    content: '';
+    background:#fafafa;
+}
+
+.history-items{
+    margin-bottom:30px;
 }
