@@ -17,6 +17,12 @@
 
 }
 
+.bg-color-contact{
+    background-color: #fff;
+
+}
+
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -343,4 +349,42 @@ footer{
 
 .history-items{
     margin-bottom:30px;
+}
+
+/*---------------------------------------Contact Form*/
+
+.contact-heading{
+    font-family:'Exo', sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form{
+    padding-top: 10px;
+    /*to center the content*/
+    margin: 0 auto;
+    /*for better experience*/
+    max-width: 70%;
+}
+/*to style button*/
+button[type="Submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color:#e84610;
+}
+
+/*---------------------------------------Media queries*/
+
+@media(min-vidth:992px) {
+    .center-form{
+        padding-top: 30px;
+        /*to center the content*/
+        margin: 0 auto;
+        /*for better experience*/
+        min-height:50%;
+        max-width: 50%;
+    }
+
 }
