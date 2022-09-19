@@ -201,27 +201,10 @@
         var APIKey = 'AIzaSyAUlQOjVjf0fTkA4wgWpLvmbhO0SuFFSow'
     </script>
     -->
-    <script>
-        import { MarkerClusterer } from "@googlemaps/markerclusterer";
-
-const markerCluster = new MarkerClusterer({ map, markers });
-    </script>
-    <script>
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'),{
-            zoom: 3,
-            center: {
-                lat: 46.619261,
-                lng: -33.134766
-            }
-
-            });
-        }
-    </script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUlQOjVjf0fTkA4wgWpLvmbhO0SuFFSow&callback=initMap&v=weekly"
-      defer
-    ></script>
+   
+<script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUlQOjVjf0fTkA4wgWpLvmbhO0SuFFSow&callback=initMap" async defer></script>
+<script src="assets/js/maps.js"></script>
 </body>
 
 </html>
