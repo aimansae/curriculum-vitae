@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!--emailjs-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("nqozKf4boBFpP2WXs");
+   })();
+</script>
+
     <title>Rosie</title>
 </head>
 
@@ -80,7 +91,7 @@
                 <h5 class="uppercase text-center">Let's work together</h5>
 
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="return sendMail(this)">
                         <!--class form control from bootstrap-->
                         <!--name important for the serve to get info and data-->
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required>
@@ -203,7 +214,7 @@
         </div>
 
     </footer>
-
+<script src="assets/js/sendemail.js"></script>
 </body>
 
 </html>
